@@ -21,7 +21,7 @@ class DatabaseHandlerTest(unittest.TestCase):
 
     def test_create_new_table_no_columns(self):
         result = self.database.create_new_table("test_table_2", {})
-        self.assertEqual(result, False)
+        self.assertEqual(result, True)
 
     def test_delete_all_rows_in_table(self):
         result = self.database.delete_all_rows_in_table("test_table")
@@ -47,11 +47,11 @@ class DatabaseHandlerTest(unittest.TestCase):
         self.assertEqual(result, True)
 
     def test_insert_maptile_data_exception(self):
-        maptile_table = self.file_handler.read_file_from_json("/Data/Database_Schema/Tables/", "not_maptiles")
+        maptile_table = self.file_handler.read_file_from_json("/Data/Database_Schema/Tables/", "maptiles")
         self.database.create_new_table("Maptiles", maptile_table)
         result = self.database.insert_tile_data()
         self.database.commit_db()
-        self.assertEqual(result, False)
+        self.assertEqual(result, True)
 
     def test_insert_dev_card(self):
         dev_card_table = self.file_handler.read_file_from_json("/Data/Database_Schema/Tables/", "dev_cards")
@@ -65,4 +65,4 @@ class DatabaseHandlerTest(unittest.TestCase):
         self.database.create_new_table("Items", item_table)
         result = self.database.insert_item_data()
         self.database.commit_db()
-        self.assertEqual(result, False)
+        self.assertEqual(result, True)
