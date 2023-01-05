@@ -1,7 +1,7 @@
 import unittest
 
-from Model.database_handler import Database
-from Model.file_handler import Filehandler
+from model.database_handler import Database
+from model.file_handler import Filehandler
 
 
 class DatabaseHandlerTest(unittest.TestCase):

@@ -3,7 +3,7 @@ Main executor of the code
 """
 
 from cmd import *
-from View.view import ZombieInMyPocket
+from view.view import ZombieInMyPocket
 
 if __name__ == "__main__":
     game_instance = ZombieInMyPocket()

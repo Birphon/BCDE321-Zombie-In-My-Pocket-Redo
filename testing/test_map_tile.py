@@ -1,6 +1,6 @@
 import unittest
 
-from Model.map_tile import MapTile
+from model.map_tile import MapTile
 
 
 class MapTileTest(unittest.TestCase):

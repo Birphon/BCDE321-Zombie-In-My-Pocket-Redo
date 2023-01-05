@@ -1,7 +1,7 @@
 import cmd
-from Model.database_handler import Database
-from Model.file_handler import Filehandler
-from Model.game import Game
+from model.database_handler import Database
+from model.file_handler import Filehandler
+from model.game import Game
 
 
 class ZombieInMyPocket(cmd.Cmd):
