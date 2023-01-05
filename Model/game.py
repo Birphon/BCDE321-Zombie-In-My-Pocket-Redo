@@ -5,8 +5,8 @@
 import random
 from pathlib import Path
 from PIL import Image
-from model.game_data import GameData
-from model.player import Player
+from Model.game_data import GameData
+from Model.player import Player
 
 
 class Game:
@@ -125,6 +125,7 @@ class Game:
         elif effect.isnumeric():
             self.player.current_location.zombie_number += int(effect)
             print(f"{effect} Zombies have entered the room. What do you do? (Attack or Flee)")
+            self.print_player_info()
         else:
             if message != "None":
                 print(message)

@@ -17,7 +17,7 @@ FILE HANDLING CSV::
     'file', 'location']]
 
 FILE HANDLING PICKLE::
-    >>> from model.item import Item
+    >>> from Model.item import Item
     >>> temp_item = Item("test_item",None,None,None,None,None)
     >>> temp_filehandler.save_object_to_pickle("/Saves", temp_item)
     >>> loaded_object = temp_filehandler.load_object_from_pickle("/Saves", f'{datetime.now().strftime("%d%m%Y")}')

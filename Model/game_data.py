@@ -38,11 +38,11 @@ GAME DATA DEVCARDS:
 """
 
 from random import randint
-from model.dev_cards import Devcard
-from model.database_handler import Database
-from model.file_handler import Filehandler
-from model.item import Item
-from model.map_tile import MapTile
+from Model.dev_cards import Devcard
+from Model.database_handler import Database
+from Model.file_handler import Filehandler
+from Model.item import Item
+from Model.map_tile import MapTile
 
 
 def convert_tuples_to_maptile(tuple_list: tuple) -> list[MapTile]:
@@ -218,3 +218,5 @@ class GameData:
             max_dev_card_index = len(self.dev_cards) - 1
             random_index = randint(0, max_dev_card_index)
             return self.dev_cards.pop(random_index)
+
+

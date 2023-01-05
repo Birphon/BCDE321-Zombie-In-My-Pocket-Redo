@@ -1,5 +1,6 @@
-from model.strategy.abstract_convert import *
-from model.dev_cards import Devcard
+from abc import ABC, abstractmethod
+from Model.CardMaker.AbstractConvert import *
+from Model.dev_cards import Devcard
 
 
 class ConvertMaptiles(AbstractConvert):

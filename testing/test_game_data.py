@@ -1,6 +1,6 @@
 import unittest
 
-from model.game_data import *
+from Model.game_data import *
 
 
 class DatabaseHandlerTest(unittest.TestCase):

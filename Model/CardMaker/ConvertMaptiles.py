@@ -1,5 +1,6 @@
-from model.strategy.abstract_convert import *
-from model.map_tile import MapTile
+from abc import ABC, abstractmethod
+from Model.CardMaker.AbstractConvert import *
+from Model.map_tile import MapTile
 
 
 class ConvertMaptiles(AbstractConvert):

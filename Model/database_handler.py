@@ -60,7 +60,7 @@ USING DATABASE HANDLER::
 import doctest
 import sqlite3
 import os
-from model.file_handler import Filehandler
+from Model.file_handler import Filehandler
 
 
 class Database:
