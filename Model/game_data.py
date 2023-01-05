@@ -107,6 +107,7 @@ class GameData:
         self.database: Database = Database("ZombieInMyPocket.db")
         self.file_handler: Filehandler = Filehandler()
         self.reset_database()
+        self.initialize_game_data()
 
     def reset_database(self):
         """
@@ -218,5 +219,11 @@ class GameData:
             max_dev_card_index = len(self.dev_cards) - 1
             random_index = randint(0, max_dev_card_index)
             return self.dev_cards.pop(random_index)
+        else:
+            return IndexError("Cannot pop dev card from an empty list")
 
 
+if __name__ == "__main__":
+    import doctest
+
+    doctest.testmod(verbose=True)

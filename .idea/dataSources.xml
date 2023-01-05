@@ -1,35 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ZombieInMyPocket" uuid="aad31c11-a2db-4a63-b95a-ed5a711e7d68">
+    <data-source source="LOCAL" name="test" uuid="d748fe74-5077-414b-947f-25d6e647f308">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Bagheera\Documents\Documents 2\VSCode Repo's\BCDE321-Zombie-In-My-Pocket Luc\ZombieInMyPocket.db</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-      <libraries>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.39.2/sqlite-jdbc-3.39.2.jar</url>
-        </library>
-      </libraries>
-    </data-source>
-    <data-source source="LOCAL" name="test" uuid="6110368f-68a0-46aa-a4ab-352b92e2ac55">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Bagheera\Documents\Documents 2\VSCode Repo's\BCDE321-Zombie-In-My-Pocket-Redo\testing\test.db</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-      <libraries>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.39.2/sqlite-jdbc-3.39.2.jar</url>
-        </library>
-      </libraries>
-    </data-source>
-    <data-source source="LOCAL" name=".coverage" uuid="ecc18b0b-b20d-4ff3-ba56-43d7167179bb">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Bagheera\Documents\Documents 2\VSCode Repo's\BCDE321-Zombie-In-My-Pocket-Redo\.coverage</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\Bagheera\Documents\Documents 2\VSCode Repo's\BCDE321-Zombie-In-My-Pocket-Redo\Model\test.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>
