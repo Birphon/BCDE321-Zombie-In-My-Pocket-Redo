@@ -105,3 +105,9 @@ class GameDataTest(unittest.TestCase):
         self.game_data.dev_card_pop()
         after_pop_count = len(self.game_data.dev_cards)
         self.assertEqual(before_pop_count - after_pop_count, 1)
+
+    def test_str_to_bool_true(self):
+        self.assertEqual(str_to_bool("True"), True)
+
+    def test_str_to_bool_false(self):
+        self.assertEqual(str_to_bool("False"), False)

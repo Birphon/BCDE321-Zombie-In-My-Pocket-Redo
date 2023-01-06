@@ -1,8 +1,8 @@
-from Model.Converter.abstract_convert import *
+from Model.card_convertor.abstract_convert import *
 from Model.dev_cards import Devcard
 
 
-class ConvertMaptiles(AbstractConvert):
+class ConvertDevCards(AbstractConvert):
     def tuple_to_objects(self, tuple_list: [tuple]):
         devcard_list = []
         for card in tuple_list:

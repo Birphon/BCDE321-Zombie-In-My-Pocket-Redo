@@ -1,4 +1,4 @@
-from Model.Converter.abstract_convert import *
+from Model.card_convertor.abstract_convert import *
 from Model.map_tile import MapTile
 
 
